@@ -1,0 +1,11 @@
+# Benchmark "../DATA/s1423.bench" written by ABC on Fri Sep  9 11:23:41 2011
+.model ex0.bench
+.inputs G2
+.outputs G23
+.default_input_arrival 0 0
+.latch G23 G1 0
+.gate NOR2X1  A=G1 B=G2 Y=G14
+.gate INVX1   A=G14 Y=G15
+.gate AND2X1  A=G14 B=G15 Y=G23
+.end
+
